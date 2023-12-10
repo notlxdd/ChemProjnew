@@ -1,0 +1,302 @@
+<head>
+  <link rel="stylesheet" href="main.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;400&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+  </style>
+
+
+</head>
+
+<body>
+  <div class="content">
+    <div class="topnav">
+      <a href="#home"><img class="navimg" src="https://i.ibb.co/4NvGWM6/chem.jpg"></a>
+      <a class="navt" href="#rwa">RWA</a>
+      <a class="navt" href="#quantum">Quantum</a>
+      <a class="navt" href="#overview">Overview</a>
+    </div>
+
+    <div class="animbackground">
+      <div class="main-anim">
+        <h1 class="atext">
+          <span class="btext" id="comp">Computer</span>
+          <span class="btext" id="sci">Science</span>
+          <span class="btext" id="and">&</span>
+          <span class="btext" id="chem">Chemistry</span>
+        </h1>
+      </div>
+    </div>
+
+    <div id="overview">
+      <h1 class="compchemtxt">Computational Chemistry</h1>
+      <div class="slider">
+        <div class="slides">
+          <div class="slide">
+            <img class="slideimgs" src="https://i.ibb.co/J3mFv3k/fritz-and-walter.jpg" alt="Slide 1">
+            <div class="text">1927: the first theoretical calculations in chemistry were made by Walter Heitler and
+              Fritz Wolfgang London using valence bond theory.</div>
+          </div>
+          <div class="slide">
+            <img class="slideimgs" src="https://i.ibb.co/L5BhnDn/psi.png" alt="Slide 2">
+            <div class="text2">1940s: development of more efficient computer technology → solving elaborate wave
+              equations for complex atomic systems feasible</div>
+          </div>
+          <div class="slide">
+            <img class="slideimgs" src="https://i.ibb.co/G0W1Ygr/huckel-method.png" alt="Slide 3">
+            <div class="text2">1964: Hückel method calculations for molecules like butadiene, benzene, and ovalene were
+              generated on computers at Berkeley and Oxford</div>
+          </div>
+          <div class="slide">
+            <img class="slideimgs" src="https://i.ibb.co/3Yr4GZF/taub.jpg" alt="Slide ">
+            <div class="text">1970: The term "computational chemistry" was mentioned in the book "Computers and Their
+              Role in the Physical Sciences" by Fernbach and Taub</div>
+          </div>
+
+        </div>
+
+        <button class="prev" onclick="changeSlide(-1)">❮</button>
+        <button class="next" onclick="changeSlide(1)">❯</button>
+      </div>
+
+      <div class="aspectofcompchem">
+        <div class="expdata">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img class="aoccimg" src="https://i.ibb.co/KmqmW7g/data-1.png">
+                <p class="aocctxt">Aiding Experimental Data</p>
+              </div>
+              <div class="flip-card-back">
+                <ul>
+                  <li>Computational models can predict the most stable atomic arrangements,</li>
+                  <li>In drug development, computational models can predict how a drug molecule will interact with a
+                    target protein at an atomic level.</li>
+
+                  <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Exp Vs
+                    Comp</button>
+                  <div id="id01" class="modal">
+                    <div class="imgcontainer">
+                      <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                        title="Close Modal">&times;</span>
+                    </div>
+                    <div class="container">
+                      <h2>Experimentation vs Computation</h2>
+                      <img class="expcompimg" src="https://i.ibb.co/SfpL4Q0/computation-vs-experimentation.webp"
+                        alt="computation-vs-experimentation">
+                    </div>
+                  </div>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="predictmol">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img class="aoccimg" src="https://i.ibb.co/d5PqL7K/molecule.png" alt="molecule">
+                <p class="aocctxt">Predicting Unknown Molecules</p>
+              </div>
+              <div class="flip-card-back">
+                <ul>
+                  <li>Computational models can also simulate various polymer structures and predict their mechanical,
+                    thermal, or electrical properties</li>
+                  <li>Computational models can even predict reaction mechanisms by simulating transition states and
+                    activation energies.</li>
+                  <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Predicted
+                    Molecules</button>
+                  <div id="id02" class="modal2">
+                    <div class="imgcontainer">
+                      <span onclick="document.getElementById('id02').style.display='none'" class="close2"
+                        title="Close Modal">&times;</span>
+                    </div>
+                    <div class="container2">
+                      <h2>Predicted Molecules</h2>
+                      <img class="predictmolimg" src="https://i.ibb.co/10HLt4r/predictedmol.jpg" alt="predictedmol">
+                    </div>
+                  </div>
+
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+
+    <div id="quantum">
+      <h1 class="qtxt">Quantum Computing</h1>
+      <div class="bhistory">
+        <h2 class="bhtitle">Brief history of Quantum Computing</h2>
+        <ul>
+          <li>1982: Starts with Richard Feynman lectures on the potential advantages of quantum computing</li>
+          <li>1985: The idea of a “universal quantum computer” </li>
+          <li>1996: A quantum algorithm which can simulate quantum-mechanical systems</li>
+          <li>2001: the first implementation of an algorithm that factored 15 into its prime factors on a 7-qubit
+            processor</li>
+        </ul>
+      </div>
+      <div class="qcvsrc">
+        <div class="qc">
+          <h2 class="quantumcomputing">Quantum Computing</h2>
+          <div class="qcimg">
+            <img class="quantumcomputer" src="https://i.ibb.co/sjMqg2c/quantumcomputer.webp" alt="quantumcomputer">
+            <img class="diagram" src="https://i.ibb.co/X3fWFrj/diagram.png" alt="diagram">
+          </div>
+          <ul>
+            <li>Quantum computers use Q-bits. These are often electrons but can also be other things such as photons
+            </li>
+            <li>Electrons can be “on” or “off” like a classical bit in that they can spin up or spin down in a field
+            </li>
+            <li>But the difference from a classical bit is that quantum effects apply to them and they can actually be
+              in a weighted superposition of being both spin up and spin down</li>
+            <li>As more Q-bits are added, this creates something different from classical computers- in a classical
+              computer, within N bits, N pieces of information are contained in that each of them can be on or off</li>
+            <li>Entanglement:Two particles being entangled with each other implies that if the state of one of them
+              collapses to a certain value, the state of the other can instantly be known, no matter how far separated
+              they are from each other in space. “spooky action at a distance” </li>
+            <li>Quantum computers need to be kept at a very low temperature, and in fact most of the volume that a
+              quantum computer takes up is its cooling apparatus</li>
+            <li>Also prone to error</li>
+          </ul>
+        </div>
+        <div class="rc">
+          <h2 class="classiccomputing">Classic Computing</h2>
+          <img class="computerimg" src="https://i.ibb.co/Zg0JW4N/classical-computing.jpg" alt="classical-computing">
+          <ul>
+            <li>A classical computer is made up of “bits” which are really electrical switches that can be turned on or
+              off. They are definitively 0 or 1 with no in between</li>
+            <li>Classical computing works in Binary, therefore it is in base 2</li>
+            <li>A 4 bit aggregation is a nybble </li>
+            <li>Capital A has been standardized as the number 65 or 01000001</li>
+            <li>The highest number you can count to with 8 bits is 255 but 256 digits are represented(0-255)</li>
+            <li>Kilobytes - thousand of bytes, Megabytes - millions of bytes etc.</li>
+          </ul>
+
+        </div>
+
+
+      </div>
+      <div class="appofquantum">
+        <h2>Applications of quantum computing in Computational Chemistry and Challenges</h2>
+        <ul>
+          <li>Quantum computers are able to solve certain types of chemistry problems a lot better than classical
+            computers</li>
+          <li>Specifically, quantum computers should be able to handle exponentially larger and more complex
+            calculations, like those needed to solve the Schrodinger equation, because the qubits that make them up take
+            advantage of quantum states. </li>
+          <li>Unlike binary digits, or bits, made up of ones and zeros, qubits can exist in two states simultaneously
+          </li>
+          <li> On an optimized quantum computer, however, the time increases polynomially, not linearly, This means, not
+            shockingly, that quantum computers will take significantly less time than classical, and that this
+            difference in time increases with more complicated problems.</li>
+          <li><a href="https://www.chem.purdue.edu/kais/research/algorithms.html" target="_blank">Purdue Chemistry: S.
+              Kais Group: Quantum Computing and Algorithms:</a></li>
+          <img class="drkais" src="https://i.ibb.co/pzJdyjJ/drkais.jpg">
+        </ul>
+      </div>
+
+
+    </div>
+
+
+
+    <div id="rwa">
+      <div class="webandskills">
+        <div class="iframewebsite">
+          <iframe class="jobs"
+            src="https://getwork.com/search/results?keyword=computational+chemistry&company_ids=&location="
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="skills">
+          <h2>Typical Job Functions</h2>
+          <p>Examples of work a computational chemist may perform include:</p>
+          <ul>
+            <li>Using simulations to identify sites on protein molecules that are most likely to bind a new drug
+              molecule </li>
+            <li>Creating models of synthesis reactions to demonstrate the effects of kinetics and thermodynamics. </li>
+            <li>Exploring the basic physical processes underlying phenomena such as superconductivity, energy storage,
+              corrosion, or phase changes.</li>
+          </ul>
+          <p>Typical work duties of a computational chemist include:</p>
+          <ul>
+            <li>Applying new software and hardware capabilities for data collection and analysis</li>
+            <li>Developing computer models and simulations of chemical and biochemical processes and entitie</li>
+            <li>Performing and interpreting statistical analysis of large datasets</li>
+            <li>Creating visual representations of reaction pathways, molecular interactions, or other phenomena</li>
+            <li>Characterizing new compounds and processes to support patent claims</li>
+            <li>Helping to develop synthesis processes</li>
+            <li>Providing customer service or sales support</li>
+            <li>Teaching courses and training students</li>
+            <li>Designing experiments</li>
+          </ul>
+          <p>Career Paths</p>
+          <ul>
+            <li>Industry employers typically include companies in the pharmaceutical, petroleum, and industrial
+              chemistry areas. </li>
+            <li>Government jobs are available at the national laboratories and various government agencies.</li>
+            <li>Computational chemists in academic environments often teach courses or provide individualized
+              instruction on using various types of software or data analysis. At national laboratories, they may train
+              visiting users, and they may perform their own research. </li>
+            <li>Customer service computational chemists may travel to their customers' laboratories to provide them with
+              training or technical assistance.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="barchart">
+        <!--chart start-->
+        <div class="chart">
+          <ul class="numbers">
+            <li><span>$100000</span></li>
+            <li><span>$90000</span></li>
+            <li><span>$80000</span></li>
+            <li><span>$70000</span></li>
+            <li><span>$60000</span></li>
+            <li><span>$50000</span></li>
+            <li><span>$40000</span></li>
+            <li><span>$30000</span></li>
+            <li><span>$20000</span></li>
+            <li><span>$10000</span></li>
+          </ul>
+          <ul class="bars">
+            <li>
+              <div class="bar" data-percentage="59.972" data-number="59972" id="ac"></div><span>Analytical
+                Chemist</span>
+            </li>
+            <li>
+              <div class="bar" data-percentage="64.207" data-number="64207" id="oc"></div><span>Organic Chemist</span>
+            </li>
+            <li>
+              <div class="bar" data-percentage="73.0333" data-number="73033" id="ic"></div><span>Inorganic
+                Chemist</span>
+            </li>
+            <li>
+              <div class="bar" data-percentage="78.000" data-number="78000" id="cc"></div><span>Computational
+                Chemist</span>
+            </li>
+            <li>
+              <div class="bar" data-percentage="79.402" data-number="79402" id="pc"></div><span>Physical Chemist</span>
+            </li>
+            <li>
+              <div class="bar" data-percentage="90.179" data-number="90179" id="bc"></div><span>Biochemist</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="main.js" type="text/javascript"></script>
+</body>
